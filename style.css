@@ -1,0 +1,153 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+body {
+	font-family: arial, sans-serif;
+	min-height: 100%;
+	display: grid;
+	grid-template-rows: 1fr auto;
+}
+
+ul.nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 250px;
+	margin-left: auto;
+	padding-right: 1rem;
+	padding-top: 1rem;
+}
+
+.dots-img,
+.avatar-img {
+	height: 30px;
+	width: 30px;
+}
+
+.avatar-img {
+	border-radius: 50%;
+}
+
+.main-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 80%;
+	margin: auto;
+	padding: 2rem;
+}
+
+.search {
+	position: relative;
+    width: 60%;
+}
+
+.search-icon{
+    position: absolute;
+    top: 40px;
+    left: 14px;
+}
+
+.mic-icon{
+    position: absolute;
+    height: 20px;
+    top: 40px;
+    right: 20px;
+}
+
+input[type='text'] {
+	width: 100%;
+	height: 50px;
+	border-radius: 40px;
+	outline: none;
+	border: 0;
+	border: 1px solid #677079;
+	margin-top: 25px;
+	margin-bottom: 2rem;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+input:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button-section {
+	display: flex;
+	justify-content: space-between;
+	width: 290px;
+	margin-bottom: 2rem;
+}
+
+.button-section button {
+	padding: 1rem 1rem;
+	border-radius: 4px;
+	outline: none;
+	border: 0;
+	user-select: none;
+	color: #3c4043;
+}
+
+.button-section button:hover {
+	cursor: pointer;
+	border: 1px solid #000;
+}
+
+.language-link {
+	color: blue;
+	padding: 0 3px;
+}
+
+.language-link:hover {
+	text-decoration: underline;
+}
+
+footer {
+	color: rgba(0, 0, 0, 0.54);
+	background: #f2f2f2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+footer a {
+	color: rgba(0, 0, 0, 0.54);
+}
+
+.footer-top {
+	border-bottom: 1px solid #dadce0;
+	padding: 15px 30px;
+}
+
+.footer-bottom,
+footer ul {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-bottom {
+	padding: 15px 30px;
+}
+
+.footer-bottom-left {
+	flex: 0.35;
+}
+
+.footer-bottom-right {
+	flex: 0.2;
+}
